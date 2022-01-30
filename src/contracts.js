@@ -1,4 +1,4 @@
-const contracts = require('@baza/protocol/contracts.json')
+const contracts = require('@bazarion/protocol/contracts.json')
 
 
 module.exports = contracts

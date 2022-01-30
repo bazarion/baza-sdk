@@ -1,6 +1,6 @@
 const { ethers } = require('ethers')
-const BazaFactoryAbi = require('@baza/protocol/abis/baza/BazaFactory.json')
-const contracts = require('@baza/protocol/contracts.json')
+const BazaFactoryAbi = require('@bazarion/protocol/abis/baza/BazaFactory.json')
+const contracts = require('@bazarion/protocol/contracts.json')
 
 class Factory {
     constructor(contract, provider, signer = null) {

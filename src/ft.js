@@ -1,5 +1,5 @@
 const { ethers } = require('ethers')
-const BazaAbi = require('@baza/protocol/abis/baza/Baza.json')
+const BazaAbi = require('@bazarion/protocol/abis/baza/Baza.json')
 
 class FT {
     constructor(ft, provider) {

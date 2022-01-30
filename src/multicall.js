@@ -1,10 +1,10 @@
 const { ethers } = require('ethers')
-const BazaMarketAbi = require('@baza/protocol/abis/baza/BazaMarket.json')
-const BazaFactoryAbi = require('@baza/protocol/abis/baza/BazaFactory.json')
-const BazaNFTAbi = require('@baza/protocol/abis/baza/BazaNFT.json')
-const BazaAbi = require('@baza/protocol/abis/baza/Baza.json')
+const BazaMarketAbi = require('@bazarion/protocol/abis/baza/BazaMarket.json')
+const BazaFactoryAbi = require('@bazarion/protocol/abis/baza/BazaFactory.json')
+const BazaNFTAbi = require('@bazarion/protocol/abis/baza/BazaNFT.json')
+const BazaAbi = require('@bazarion/protocol/abis/baza/Baza.json')
 const { Contract, Provider } = require('ethcall')
-const contracts = require('@baza/protocol/contracts.json')
+const contracts = require('@bazarion/protocol/contracts.json')
 const { NETWORKS, MULTICALLS } = require('./constants')
 
 class Multicall {

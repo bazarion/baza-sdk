@@ -1,5 +1,5 @@
 const { ethers } = require('ethers')
-const BazaNFTAbi = require('@baza/protocol/abis/baza/BazaNFT.json')
+const BazaNFTAbi = require('@bazarion/protocol/abis/baza/BazaNFT.json')
 
 class NFT {
     constructor(nft, provider) {
