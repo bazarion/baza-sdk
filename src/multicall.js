@@ -156,27 +156,27 @@ class Multicall {
         return { price, share, isAuto, ROI }
     }
 
-    async askOfOwnerByIndex(asker, total) {
+    async askOfOwnerByIndex(asker, from, to) {
         let calls = []
-        for (let i = 0; i < total; i++) {
+        for (let i = from; i < to; i++) {
             calls.push(this.marketContract.askOfOwnerByIndex(asker, i))
         }
         let data = await this.provider.all(calls)
         return data
     }
 
-    async bidOfOwnerByIndex(bidder, total) {
+    async bidOfOwnerByIndex(bidder, from, to) {
         let calls = []
-        for (let i = 0; i < total; i++) {
+        for (let i = from; i < to; i++) {
             calls.push(this.marketContract.bidOfOwnerByIndex(bidder, i))
         }
         let data = await this.provider.all(calls)
         return data
     }
 
-    async nftOfOwnerByIndex(owner, total) {
+    async nftOfOwnerByIndex(owner, from, to) {
         let calls = []
-        for (let i = 0; i < total; i++) {
+        for (let i = from; i < to; i++) {
             calls.push(this.nftContract.tokenOfOwnerByIndex(owner, i))
         }
         let data = await this.provider.all(calls)
