@@ -4,7 +4,9 @@ module.exports = {
             chainId: '0x38',
             chainName: 'Smart Chain',
             nativeCurrency: { name: 'Binance', symbol: 'BNB', decimals: 18, wrappedToken: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' },
-            rpcUrls: ['https://bsc-dataseed.binance.org/'], blockExplorerUrls: ['https://bscscan.com'],
+            // rpcUrls: ['https://bsc-dataseed.binance.org/'], blockExplorerUrls: ['https://bscscan.com'],
+            rpcUrls: ['https://summer-damp-mountain.bsc.quiknode.pro/2e0b2585ff601a7c5a6a214c42ae7c27054a8773/'],
+            blockExplorerUrls: ['https://bscscan.com'],
             isSupported: true,
             logoURI: 'https://github.com/bazarion/assets/raw/main/chains/binancesmartchain/logo.png'
         },
@@ -13,7 +15,7 @@ module.exports = {
             chainName: 'Fuse Network',
             nativeCurrency: { name: 'Fuse Network', symbol: 'FUSE', decimals: 18, wrappedToken: '0x0BE9e53fd7EDaC9F859882AfdDa116645287C629' },
             rpcUrls: ['https://rpc.fuse.io'], blockExplorerUrls: ['https://explorer.fuse.io/'],
-            isSupported: true,
+            isSupported: false,
             logoURI: 'https://github.com/bazarion/assets/raw/main/chains/fuse/logo.png'
         },
         {
@@ -21,7 +23,7 @@ module.exports = {
             chainName: 'Celo',
             nativeCurrency: { name: 'Celo', symbol: 'CELO', decimals: 18, wrappedToken: '0x2999B189A6b06081c58bC4dA898C38089C4ad13A' },
             rpcUrls: ['https://forno.celo.org'], blockExplorerUrls: ['https://explorer.celo.org/'],
-            isSupported: true,
+            isSupported: false,
             logoURI: 'https://raw.githubusercontent.com/bazarion/assets/main/chains/celo/logo.png'
         },
         {
@@ -51,7 +53,7 @@ module.exports = {
             chainName: 'TomoChain Testnet',
             nativeCurrency: { name: 'TomoChain', symbol: 'TOMO', decimals: 18, wrappedToken: '0x0f79657e61fe20f0bF4015C427705A57D9ae5EDc' },
             rpcUrls: ['https://rpc.testnet.tomochain.com/'], blockExplorerUrls: ['https://scan.testnet.tomochain.com/'],
-            isSupported: true
+            isSupported: true,
         },
         {
             chainId: '0xaef3',
@@ -61,6 +63,15 @@ module.exports = {
             blockExplorerUrls: ['https://alfajores-blockscout.celo-testnet.org'],
             iconUrls: ['future'],
             isSupported: false
+        },
+        {
+            chainId: '0x61',
+            chainName: 'BSC Testnet',
+            nativeCurrency: { name: "BSC Testnet", symbol: 'BNB', decimals: 18, wrappedToken: '0x5B3E2Bc1da86ff6235D9eAd4504d598caE77DBCB' },
+            rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
+            blockExplorerUrls: ['https://testnet.bscscan.com'],
+            iconUrls: ['future'],
+            isSupported: true
         }
     ],
     MULTICALLS: [
@@ -91,6 +102,10 @@ module.exports = {
         {
             chainId: '0x7a',
             address: '0x95C2D32fDb32EDA8ce7fbF6539Dd6945acb9bB09'
+        },
+        {
+            chainId: '0x61',
+            address: '0x6e5BB1a5Ad6F68A8D7D6A5e47750eC15773d6042'
         }
     ]
 }
